@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    font-size: 1.2rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#brand h1 {
+    margin-bottom: 30%;
+    text-align: center;
+    color: white;
+    letter-spacing: 6px;
+}
+
+.show-case h1 {
+    letter-spacing: 0.3rem;
+}
+
+.form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form .input {
+    height: 2rem;
+    width: 20rem;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-2 span {
+    display: flex;
+    margin-top: 5%;
+}
+
+.section-2 a {
+    margin-top: 5%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.hr {
+    margin-top: 5%;
+    border-bottom: 0.5px solid #f82777c5;
+    width: 35%;
+}
+
+#btn-main, #btn-secondary {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 20px;
+    transition: all .2s ease;
+    font-size: 1.1rem;
+}
+
+#btn-main:hover, #btn-secondary:hover {
+    background-color: #f82777c5;
+    color: white;
+}
+
+.section-2 #btn-secondary {
+    text-align: center;
+    width: 85%;
+    font-size: 1.3rem;
+    margin-top: 5%;
+}
+
+.left {
+    flex-basis: 40%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #181818;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    color: white;
+    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center;
+    width: 100vh;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 700px) {
+    .right {
+        display: none;
+    }
+    .left {
+        background-image: linear-gradient(to bottom, #fa2c7bb7, black);
+        padding-top: 10rem;
+        flex-basis: 100%;
+        height: 100vh;
+    }
+    .form .input {
+        width: 50vh;
+    }
+    .section-2 hr {
+        border: 1px solid #fa2c7b4d;
+    }
+}
